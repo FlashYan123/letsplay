@@ -78,3 +78,28 @@ a {
     font-size: 1.2em;
     color: #fff;
 }
+
+footer {
+    padding: 20px;
+    background-color: #2c344c; /* Matches the body's background for consistency */
+    color: #fff; /* White text color for contrast */
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+footer a {
+    color: #94b2e2; /* Light blue color for links */
+    text-decoration: underline; /* Underline to indicate it's a link */
+}
+
+footer a:hover {
+    color: #ffffff; /* White color on hover for a visual feedback */
+}
