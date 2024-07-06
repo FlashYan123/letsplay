@@ -43,6 +43,19 @@ h1 {
     margin-bottom: 10px;
 }
 
+.announcementpre {
+    background-color: #FFA500;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+
+}
+
+.announcementpre h2 {
+    margin-bottom: 10px;
+}
+
 .announcementcritical {
     background-color: #FF0000;
     color: white;
