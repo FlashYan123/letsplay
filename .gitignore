@@ -1,0 +1,8 @@
+# Configuration files from text editors
+.idea
+.vscode
+.obsidian
+
+# Vim
+*.s[a-v][a-z]
+*.sw[a-p]
