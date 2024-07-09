@@ -31,6 +31,16 @@ h1 {
     margin-bottom: 20px;
 }
 
+a {
+    color: #94b2e2;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #94b2e2;
+    text-decoration: underline;
+}
+
 .announcement {
     background-color: #4CAF50;
     color: white;

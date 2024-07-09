@@ -17,9 +17,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 const descriptionElement = document.createElement('p');
                 descriptionElement.textContent = release.body;
 
+                const dateElement = document.createElement('p');
+                dateElement.textContent = `Published on: ${new Date(release.published_at).toLocaleDateString()} by ${release.author ? release.author.login : 'Unknown'}`;
+
                 releaseElement.appendChild(nameElement);
                 releaseElement.appendChild(typeElement);
                 releaseElement.appendChild(descriptionElement);
+                releaseElement.appendChild(dateElement);
 
                 releasesContainer.appendChild(releaseElement);
             });
