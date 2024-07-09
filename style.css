@@ -33,7 +33,6 @@ button {
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s;
-   
 }
 
 .announcement {
@@ -52,9 +51,15 @@ button:hover {
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
+
+a:hover {
+    color: #94b2e2; /* Light blue color for links */
+    text-decoration: underline; /* Underline to indicate it's a link */
+}
+
 
 p {
     padding: 20px;
@@ -91,7 +96,65 @@ footer a:hover {
     color: #ffffff; /* White color on hover for a visual feedback */
 }
 
+/* Mobile styles */
+@media only screen and (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
 
+    button {
+        padding: 15px 30px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .announcement, footer {
+        padding: 10px;
+    }
+}
+
+/* Tablet styles */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    button {
+        padding: 20px 40px;
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .announcement, footer {
+        padding: 15px;
+    }
+}
+
+/* Desktop and above */
+@media only screen and (min-width: 769px) {
+    body {
+        padding: 30px;
+    }
+
+    button {
+        padding: 30px 60px;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .announcement, footer {
+        padding: 20px;
+    }
+}
 
 
 
