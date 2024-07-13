@@ -17,10 +17,11 @@ body {
     flex-direction: column;
 }
 
-h1 {
+h1, h2 {
   text-align: left;
   color: #94b2e2;
 }
+
 
 button {
   display: block;
@@ -36,16 +37,6 @@ button {
    
 }
 
-announcement {
-    background-color: #ff9800;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
 
 button:hover {
   background-color: #45a049;
@@ -81,6 +72,53 @@ footer a:hover {
     color: #ffffff; /* White color on hover for a visual feedback */
 }
 
+@media (max-width: 768px) {
+    body {
+        padding: 5%;
+    }
+
+    h1, h2 {
+        font-size: 2rem;
+    }
+
+    button {
+        padding: 15px 30px;
+        font-size: 1.5rem;
+    }
+
+    .announcement {
+        padding: 20px;
+        font-size: 1.25rem;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10%;
+    }
+
+    h1, h2 {
+        font-size: 1.75rem;
+    }
+
+    button {
+        padding: 12px 24px;
+        font-size: 1.25rem;
+    }
+
+    .announcement {
+        padding: 15px;
+        font-size: 1rem;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
 
 
 

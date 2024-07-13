@@ -17,7 +17,7 @@ body {
     flex-direction: column;
 }
 
-h1 {
+h1, h2 {
   text-align: left;
   color: #94b2e2;
 }
@@ -37,8 +37,8 @@ button {
 }
 
 .announcement {
-    background-color: #ff9800; /* измени на любой цвет если захочешь */
-    color: white;  /* тоже можешь изменить если цвет скучный */
+    background-color: #ff9800; /* change to any color if you want */
+    color: white;  /* same here */
     text-align: center;
     padding: 10px;
     position: fixed;
@@ -54,4 +54,44 @@ button:hover {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 5%;
+    }
+
+    h1, h2 {
+        font-size: 2rem;
+    }
+
+    button {
+        padding: 15px 30px;
+        font-size: 1.5rem;
+    }
+
+    .announcement {
+        padding: 20px;
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10%;
+    }
+
+    h1, h2 {
+        font-size: 1.75rem;
+    }
+
+    button {
+        padding: 12px 24px;
+        font-size: 1.25rem;
+    }
+
+    .announcement {
+        padding: 15px;
+        font-size: 1rem;
+    }
 }

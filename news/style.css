@@ -111,3 +111,43 @@ footer a {
 footer a:hover {
     color: #ffffff; /* White color on hover for a visual feedback */
 }
+
+@media (max-width: 768px) {
+    body {
+        padding: 5%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    button {
+        padding: 15px 30px;
+        font-size: 1.5rem;
+    }
+
+    .announcement, .announcementpre, .announcementcritical {
+        padding: 20px;
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10%;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    button {
+        padding: 12px 24px;
+        font-size: 1.25rem;
+    }
+
+    .announcement, .announcementpre, .announcementcritical {
+        padding: 15px;
+        font-size: 1rem;
+    }
+}

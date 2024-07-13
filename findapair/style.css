@@ -8,6 +8,7 @@
 :root {
     --clr: #2c344c;
 }
+
 body {
     display: flex;
     justify-content: center;
@@ -18,36 +19,25 @@ body {
 }
 
 h1 {
-  text-align: left;
-  color: #94b2e2;
+    text-align: left;
+    color: #94b2e2;
 }
 
 button {
-  display: block;
-  margin: 10px 0;
-  padding: 30px 60px;
-  background-color: #4CAF50;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.announcement {
-    background-color: #ff9800; /* change to any color if you want */
-    color: white;  /* same about this one */
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
+    display: block;
+    margin: 10px 0;
+    padding: 30px 60px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 button:hover {
-  background-color: #45a049;
+    background-color: #45a049;
 }
 
 a {
@@ -55,20 +45,44 @@ a {
     color: inherit;
 }
 
-a:hover {
-    color: #94b2e2; /* Light blue color for links */
-    text-decoration: underline; /* Underline to indicate it's a link */
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 10px;
+    margin-top: 20px;
 }
 
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #4CAF50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    user-select: none;
+    transform: scale(1);
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
 
-p {
-    padding: 20px;
-    background-color: #2c344c; /* Matches the body's background for consistency */
-    color: #fff; /* White text color for contrast */
+.card.flip {
+    background-color: #f0f0f0;
+    color: var(--clr);
+    transform: rotateY(180deg);
+}
+
+.announcement {
+    background-color: #ff9800;
+    color: white;
     text-align: center;
+    padding: 10px;
+    position: fixed;
     width: 100%;
-    bottom: 0;
-    left: 0;
+    top: 0;
+    z-index: 1000;
 }
 
 footer {
@@ -96,7 +110,6 @@ footer a:hover {
     color: #ffffff; /* White color on hover for a visual feedback */
 }
 
-
 @media (max-width: 768px) {
     body {
         padding: 5%;
@@ -114,6 +127,17 @@ footer a:hover {
     .announcement {
         padding: 20px;
         font-size: 1.25rem;
+    }
+
+    #game-board {
+        grid-template-columns: repeat(3, 80px);
+        gap: 8px;
+    }
+
+    .card {
+        width: 80px;
+        height: 80px;
+        font-size: 20px;
     }
 }
 
@@ -134,5 +158,16 @@ footer a:hover {
     .announcement {
         padding: 15px;
         font-size: 1rem;
+    }
+
+    #game-board {
+        grid-template-columns: repeat(2, 70px);
+        gap: 5px;
+    }
+
+    .card {
+        width: 70px;
+        height: 70px;
+        font-size: 18px;
     }
 }
