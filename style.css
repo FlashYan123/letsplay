@@ -96,65 +96,35 @@ footer a:hover {
     color: #ffffff; /* White color on hover for a visual feedback */
 }
 
-/* Mobile styles */
-@media only screen and (max-width: 480px) {
+
+/* adapt for user's screen */
+@media (max-width: 768px) {
     body {
-        padding: 10px;
-    }
-
-    button {
-        padding: 15px 30px;
-        font-size: 14px;
-    }
-
-    h1 {
-        font-size: 20px;
-    }
-
-    .announcement, footer {
-        padding: 10px;
-    }
-}
-
-/* Tablet styles */
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-    body {
+        flex-direction: column;
+        justify-content: flex-start;
         padding: 20px;
     }
 
-    button {
-        padding: 20px 40px;
-        font-size: 15px;
+    .container {
+        width: 100%;
+        padding: 10px;
     }
 
     h1 {
-        font-size: 24px;
+        font-size: 24px; /* smaller font size for smaller screens */
     }
 
-    .announcement, footer {
+    .announcement {
         padding: 15px;
-    }
-}
-
-/* Desktop and above */
-@media only screen and (min-width: 769px) {
-    body {
-        padding: 30px;
+        margin-bottom: 15px;
     }
 
     button {
-        padding: 30px 60px;
-        font-size: 16px;
+        padding: 15px 30px; /* smaller buttons on smaller screens */
     }
 
-    h1 {
-        font-size: 28px;
-    }
-
-    .announcement, footer {
-        padding: 20px;
+    footer {
+        padding: 15px;
+        font-size: 12px; /* smaller font size in the footer for smaller screens */
     }
 }
-
-
-
