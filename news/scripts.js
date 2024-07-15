@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 descriptionElement.textContent = release.body;
 
                 const dateElement = document.createElement('p');
-                dateElement.textContent = `Published on: ${new Date(release.published_at).toLocaleDateString()} by ${release.author ? release.author.login : 'Unknown'}`;
+                dateElement.textContent = `Published on ${new Date(release.published_at).toLocaleDateString()} by ${release.author ? release.author.login : 'Unknown'}`;
 
                 releaseElement.appendChild(nameElement);
                 releaseElement.appendChild(typeElement);
